@@ -1,0 +1,51 @@
+.nav {
+  height: 5rem;
+  background-color: rgb(62, 2, 2);
+  display: flex;
+  padding-right: 2rem;
+
+  &__items {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-right: 1rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      position: relative;
+
+      &:hover {
+        box-shadow: inset 0 0 10px indigo;
+      }
+
+      &.active {
+        top: -5px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:nth-child(odd) {
+        background: linear-gradient(
+          263.31deg,
+          rgb(153, 51, 255) -97.49%,
+          rgb(97, 87, 255) 94.14%
+        );
+      }
+
+      &:nth-child(even) {
+        background: linear-gradient(
+          263.55deg,
+          rgb(153, 51, 255) -5.88%,
+          rgb(97, 87, 255) 194.65%
+        );
+      }
+    }
+  }
+}
+
+.main {
+  padding-top: 100px;
+}
