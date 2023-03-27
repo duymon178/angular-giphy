@@ -13,8 +13,28 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "app",
+                "onlyDependOnLibsWithTags": ["type:feature"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "type:data",
+                  "type:model",
+                  "type:ui"
+                ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:model"]
+              },
+              {
+                "sourceTag": "type:data",
+                "onlyDependOnLibsWithTags": ["type:model"]
+              },
+              {
+                "sourceTag": "domain:giphy",
+                "onlyDependOnLibsWithTags": ["domain:giphy"]
               }
             ]
           }

@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-giphy/gifs/data": ["libs/angular-giphy/gifs/data/src/index.ts"],
+      "@angular-giphy/gifs/feature": [
+        "libs/angular-giphy/gifs/feature/src/index.ts"
+      ],
+      "@angular-giphy/gifs/model": [
+        "libs/angular-giphy/gifs/model/src/index.ts"
+      ],
+      "@angular-giphy/gifs/ui": ["libs/angular-giphy/gifs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

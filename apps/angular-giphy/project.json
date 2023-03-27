@@ -92,5 +92,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["app", "domain:giphy"]
 }
