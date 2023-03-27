@@ -1,1 +1,19 @@
-<p>home works!</p>
+<pi-exchange-search-box
+  (search)="handleSearch($event)"
+></pi-exchange-search-box>
+
+<section class="trending-section">
+  <pi-exchange-heading
+    text="Trending"
+    iconName="trending_up"
+    class="trending-section__heading"
+  ></pi-exchange-heading>
+
+  <pi-exchange-gif-grid
+    [gifs]="(trending$ | async) || []"
+  ></pi-exchange-gif-grid>
+
+  <div class=""></div>
+</section>
+
+<ng-template #loading> Loading... </ng-template>

@@ -1,3 +1,11 @@
 :host {
   display: block;
 }
+
+.trending-section {
+  margin-top: 2rem;
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+}

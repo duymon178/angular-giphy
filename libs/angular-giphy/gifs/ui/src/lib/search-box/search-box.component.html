@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="search-box">
+    <input
+      formControlName="term"
+      type="text"
+      placeholder="Search all the GIFs!"
+    />
+
+    <button class="search-btn" type="submit">
+      <mat-icon fontIcon="search" class="search-icon"></mat-icon>
+    </button>
+  </div>
+</form>

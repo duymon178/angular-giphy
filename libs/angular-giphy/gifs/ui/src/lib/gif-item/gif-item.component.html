@@ -1,0 +1,12 @@
+<div *ngIf="gif" class="gif-item">
+  <a [routerLink]="['/detail', gif.id]"
+    ><img
+      [ngStyle]="{
+        'background-color':
+          gif.images.fixed_width.height % 3 === 0 ? '#F2BC1B' : '#1BA1F2'
+      }"
+      [src]="gif.images.fixed_width.webp"
+      [width]="gif.images.fixed_width.width"
+      [height]="gif.images.fixed_width.height"
+  /></a>
+</div>

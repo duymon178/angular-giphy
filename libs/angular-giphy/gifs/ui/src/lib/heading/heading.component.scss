@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.heading {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+
+  &__icon {
+    color: blueviolet;
+  }
+}

@@ -26,7 +26,7 @@ export const featureRoutes: Route[] = [
         component: SearchComponent,
       },
       {
-        path: 'detail',
+        path: 'detail/:id',
         component: DetailComponent,
       },
     ],
