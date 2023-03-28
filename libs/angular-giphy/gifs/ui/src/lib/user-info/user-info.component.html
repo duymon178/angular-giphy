@@ -1,0 +1,15 @@
+<ng-container *ngIf="user">
+  <div class="gif-user">
+    <div class="gif-user__ava">
+      <img [src]="user.avatar_url" width="80" height="80" />
+    </div>
+    <div class="gif-user__info">
+      <div class="gif-user__info__displayname">
+        {{ user.display_name }}
+      </div>
+      <div class="gif-user__info__username">@{{ user.username }}</div>
+    </div>
+  </div>
+
+  <div class="gif-user-des">{{ user.description }}</div>
+</ng-container>

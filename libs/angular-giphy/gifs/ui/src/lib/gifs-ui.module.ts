@@ -8,6 +8,7 @@ import { GifItemComponent } from './gif-item/gif-item.component';
 import { GifGridComponent } from './gif-grid/gif-grid.component';
 import { RouterModule } from '@angular/router';
 import { LoadingComponent } from './loading/loading.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, MatIconModule, ReactiveFormsModule],
@@ -17,12 +18,15 @@ import { LoadingComponent } from './loading/loading.component';
     GifItemComponent,
     GifGridComponent,
     LoadingComponent,
+    UserInfoComponent,
   ],
   exports: [
     SearchBoxComponent,
     HeadingComponent,
     GifGridComponent,
     LoadingComponent,
+    GifItemComponent,
+    UserInfoComponent,
   ],
 })
 export class GifsUiModule {}

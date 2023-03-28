@@ -1,1 +1,11 @@
-<p>search works!</p>
+<pi-exchange-heading
+  text="Search result"
+  iconName="feed"
+  class="search-heading"
+></pi-exchange-heading>
+
+<pi-exchange-gif-grid [gifs]="(search$ | async) || []"></pi-exchange-gif-grid>
+
+<div class="intersect-el" #intersectEl></div>
+
+<pi-exchange-loading *ngIf="loading$ | async"></pi-exchange-loading>

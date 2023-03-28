@@ -22,6 +22,7 @@ export interface User {
   id: number;
   avatar_url: string;
   is_verified: boolean;
+  description?: string;
 }
 
 interface Rendition {

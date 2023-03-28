@@ -1,0 +1,31 @@
+:host {
+  display: block;
+}
+
+.gif-user {
+  display: flex;
+
+  &__ava {
+    margin-right: 0.5rem;
+
+    img {
+      background-color: brown;
+    }
+  }
+
+  &__info {
+    &__displayname {
+      color: blanchedalmond;
+    }
+
+    &__username {
+      font-size: 0.813rem;
+    }
+  }
+}
+
+.gif-user-des {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-style: italic;
+}

@@ -1,3 +1,33 @@
 :host {
   display: block;
 }
+
+.gif-detail {
+  display: flex;
+  max-width: 62.5rem;
+  margin: 0 auto;
+
+  &__user {
+    flex: 1;
+  }
+
+  &__img {
+    flex: 3;
+    padding: 0 2rem;
+  }
+
+  &__info {
+    flex: 1;
+  }
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: darkgray;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+  color: floralwhite;
+}

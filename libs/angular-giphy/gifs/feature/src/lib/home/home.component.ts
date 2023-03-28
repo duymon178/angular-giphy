@@ -97,6 +97,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   handleSearch(term: string): void {
-    this.router.navigateByUrl(`search?q=${term}`);
+    this.router.navigateByUrl(`/gifs/search?q=${term}`);
   }
 }

@@ -1,1 +1,19 @@
-
+<div *ngIf="gif$ | async as gif" class="gif-detail">
+  <div class="gif-detail__user">
+    <pi-exchange-user-info [user]="gif.user"></pi-exchange-user-info>
+  </div>
+  <div class="gif-detail__img">
+    <div class="title">{{ gif.title }}</div>
+    <pi-exchange-gif-item
+      [thumbnailDisplay]="false"
+      [gif]="gif"
+    ></pi-exchange-gif-item>
+  </div>
+  <div class="gif-detail__info">
+    <div><span class="label">Rating:</span> {{ gif.rating }}</div>
+    <div>
+      <span class="label">Uploaded:</span>
+      {{ gif.import_datetime | date : 'dd/MM/yyyy' }}
+    </div>
+  </div>
+</div>

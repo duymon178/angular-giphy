@@ -20,4 +20,14 @@ export class GifsService {
       this.gf.trending({ limit: LIMIT, rating: RATING, offset })
     ).pipe(map((res) => res.data));
   }
+
+  getById(id: string): Observable<Gif> {
+    return defer(() => this.gf.gif(id)).pipe(map((res) => res.data));
+  }
+
+  search(term: string, offset: number): Observable<Gif[]> {
+    return defer(() =>
+      this.gf.search(term, { limit: LIMIT, rating: RATING, offset })
+    ).pipe(map((res) => res.data));
+  }
 }
