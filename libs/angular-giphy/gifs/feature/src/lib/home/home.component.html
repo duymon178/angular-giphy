@@ -13,7 +13,7 @@
     [gifs]="(trending$ | async) || []"
   ></pi-exchange-gif-grid>
 
-  <div class=""></div>
-</section>
+  <div class="intersect-el" #intersectEl></div>
 
-<ng-template #loading> Loading... </ng-template>
+  <pi-exchange-loading *ngIf="loading$ | async"></pi-exchange-loading>
+</section>

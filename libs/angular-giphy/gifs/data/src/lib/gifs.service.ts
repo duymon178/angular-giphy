@@ -1,4 +1,4 @@
-import { Gif } from '@angular-giphy/gifs/model';
+import { Gif, LIMIT, RATING } from '@angular-giphy/gifs/model';
 import { Injectable } from '@angular/core';
 import { GiphyFetch } from '@giphy/js-fetch-api';
 import { defer, map, Observable } from 'rxjs';
@@ -15,9 +15,9 @@ export class GifsService {
     this.gf = new GiphyFetch(API_KEY);
   }
 
-  getTrending(): Observable<Gif[]> {
-    return defer(() => this.gf.trending({ limit: 30, rating: 'g' })).pipe(
-      map((res) => res.data)
-    );
+  getTrending(offset: number): Observable<Gif[]> {
+    return defer(() =>
+      this.gf.trending({ limit: LIMIT, rating: RATING, offset })
+    ).pipe(map((res) => res.data));
   }
 }

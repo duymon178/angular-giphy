@@ -1,3 +1,6 @@
+export const LIMIT = 30;
+export const RATING = 'g';
+
 export declare type GifID = string | number;
 
 export interface User {
