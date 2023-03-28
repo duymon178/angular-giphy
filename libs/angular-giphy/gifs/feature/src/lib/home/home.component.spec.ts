@@ -54,7 +54,9 @@ describe('HomeComponent', () => {
       fixture.detectChanges();
       const term = 'term';
       component.handleSearch(term);
-      expect(routerSpy.navigateByUrl).toHaveBeenCalledWith(`search?q=${term}`);
+      expect(routerSpy.navigateByUrl).toHaveBeenCalledWith(
+        `/gifs/search?q=${term}`
+      );
     });
 
     it(`#handleIntersection should trigger loading, and trigger intersection event
