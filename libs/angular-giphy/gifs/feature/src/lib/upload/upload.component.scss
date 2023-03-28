@@ -1,3 +1,22 @@
 :host {
   display: block;
 }
+
+.upload-heading {
+  margin-bottom: 3rem;
+}
+
+.preview {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.preview-img {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

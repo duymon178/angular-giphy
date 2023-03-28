@@ -1,1 +1,23 @@
-<p>upload works!</p>
+<pi-exchange-heading
+  text="Upload"
+  iconName="file_upload"
+  class="upload-heading"
+></pi-exchange-heading>
+
+<input
+  #inputFile
+  type="file"
+  [accept]="accept"
+  [multiple]="true"
+  (click)="inputFile.value = ''"
+  (change)="handleFileInput($event)"
+/>
+
+<div *ngIf="preview" class="preview">
+  <img
+    *ngFor="let url of images"
+    [src]="getImgSrc(url)"
+    width="200"
+    height="200"
+  />
+</div>
