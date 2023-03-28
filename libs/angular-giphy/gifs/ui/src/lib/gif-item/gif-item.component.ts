@@ -9,4 +9,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class GifItemComponent {
   @Input() gif?: Gif;
+  @Input() thumbnailDisplay = true;
 }

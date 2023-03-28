@@ -6,4 +6,8 @@
   display: grid;
   grid-template-columns: repeat(6, 200px);
   gap: 1.5rem 2.5rem;
+
+  @media screen and (max-width: 90em) /* 1440px */ {
+    grid-template-columns: repeat(5, 200px);
+  }
 }
